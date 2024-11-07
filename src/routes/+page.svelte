@@ -201,8 +201,8 @@
 					<Button class="gap-2">
 						<Mail class="h-4 w-4" />
 						Email Me
-					</Button></a
-				>
+					</Button>
+				</a>
 				<a href={routes.links.linkedin} target="_blank">
 					<Button variant="outline" class="gap-2">
 						<Linkedin class="h-4 w-4" />
