@@ -76,7 +76,40 @@
 			]
 		}
 	];
+
+	// SEO data
+	const seoData = {
+		title: 'Mackenzie Nolan - Engineering Manager & Full Stack Developer',
+		description:
+			'Experienced Engineering Manager and Full Stack Developer based in Toronto, ON. Specializing in scalable applications and team leadership.',
+		keywords:
+			'Mackenzie Nolan, Engineering Manager, Full Stack Developer, JavaScript, TypeScript, React, Node.js, Python, AWS',
+		author: 'Mackenzie Nolan',
+		image: 'https://macknolan.dev/image.png', // Replace with your actual profile image URL
+		url: 'https://macknolan.dev' // Replace with your actual website URL
+	};
 </script>
+
+<svelte:head>
+	<title>{seoData.title}</title>
+	<meta name="description" content={seoData.description} />
+	<meta name="keywords" content={seoData.keywords} />
+	<meta name="author" content={seoData.author} />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content={seoData.url} />
+	<meta property="og:title" content={seoData.title} />
+	<meta property="og:description" content={seoData.description} />
+	<meta property="og:image" content={seoData.image} />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content={seoData.url} />
+	<meta property="twitter:title" content={seoData.title} />
+	<meta property="twitter:description" content={seoData.description} />
+	<meta property="twitter:image" content={seoData.image} />
+</svelte:head>
 
 <div
 	class="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800"
