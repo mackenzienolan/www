@@ -95,7 +95,7 @@
 			</div>
 
 			<p class="mb-2 text-xl">Entrepreneur, Leader & Experienced Full-Stack Developer</p>
-			<div class="text-muted-foreground flex items-center justify-center text-sm">
+			<div class="flex items-center justify-center text-sm text-muted-foreground">
 				<MapPin class="mr-1 h-4 w-4" />
 				Toronto, ON, Canada
 			</div>
@@ -126,7 +126,7 @@
 			<div class="flex flex-row flex-wrap gap-2">
 				{#each skills as skill}
 					<div
-						class="bg-primary text-primary-foreground rounded-full px-4 py-2 text-center text-sm font-medium"
+						class="rounded-full bg-primary px-4 py-2 text-center text-sm font-medium text-primary-foreground"
 					>
 						{skill}
 					</div>
@@ -222,8 +222,8 @@
 		<div class="container mx-auto px-4 text-center">
 			<p class="mb-2">© {new Date().getFullYear()} Mackenzie Nolan. All rights reserved.</p>
 			<p class="text-sm text-gray-400">
-				Built with <a href="https://svelte.dev" class="underline hover:text-white">Svelte</a> and
-				<a href="https://sst.dev" class="underline hover:text-white">SST</a>
+				Built with <a href={routes.links.svelte} class="underline hover:text-white">Svelte</a> and
+				<a href={routes.links.sst} class="underline hover:text-white">SST</a>
 			</p>
 		</div>
 	</footer>
