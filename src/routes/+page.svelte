@@ -35,7 +35,7 @@
 	const projects = [
 		{
 			title: 'Studio Genius',
-			url: 'https://studiogenius.io',
+			url: 'https://studiogenius.co',
 			description: 'Advanced analytics platform for fitness studios',
 			features: [
 				'Customer Feedback Analysis. Gather and analyze customer feedback to continuously improve your services.',
