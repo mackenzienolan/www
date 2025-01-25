@@ -15,7 +15,10 @@ export default $config({
 	},
 	async run() {
 		new sst.aws.SvelteKit('www', {
-			domain: $app.stage === 'main' ? 'macknolan.dev' : `${$app.stage}.preview.macknolan.dev`
+			domain: {
+				name: $app.stage === 'main' ? 'macknolan.com' : `${$app.stage}.preview.macknolan.com`,
+				redirects: $app.stage === 'main' ? ['macknolan.dev', 'www.macknolan.dev'] : []
+			}
 		});
 	}
 });
