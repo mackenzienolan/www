@@ -112,7 +112,7 @@
 </svelte:head>
 
 <div
-	class="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800"
+	class="min-h-screen bg-linear-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800"
 >
 	<main class="container mx-auto px-4 py-16">
 		<header class="mx-auto mb-12 flex flex-col justify-center text-center">
