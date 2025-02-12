@@ -1,0 +1,116 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main class="container mx-auto px-4 py-8">
+			<!-- Hero/Intro Section -->
+			<section class="mb-16 text-center">
+				<h1 class="text-4xl font-bold mb-4">Hi, I'm Mackenzie Nolan 👋</h1>
+				<p class="text-xl mb-6">
+					I&apos;m a Software Engineer & Entrepreneur passionate about <strong>AI, automation, and building high-performance software</strong>. Currently, I&apos;m working on an AI solution to help fitness studios and instructors gain better insights and feedback. I&apos;m also focused on developing tools to streamline web app development and extending Stripe to simplify authorization and billing solutions.
+				</p>
+			</section>
+
+			<!-- Projects Section -->
+			<section class="mb-16" id="projects">
+				<h2 class="text-3xl font-bold mb-8">Featured Projects</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<!-- Project Card 1 -->
+					<div class="border rounded-lg p-6 hover:shadow-lg transition">
+						<h3 class="text-xl font-bold mb-2">Studio Genius</h3>
+						<p class="text-gray-600 mb-4">Studio Genius is the AI Copilot for growing your fitness studio. Engage members, and grow your business.</p>
+						<div class="flex gap-2">
+							<a href="https://studiogenius.co" class="text-blue-500 hover:underline">studiogenius.co</a>
+						</div>
+					</div>
+
+					<!-- Project Card 2 -->
+					<div class="border rounded-lg p-6 hover:shadow-lg transition">
+						<h3 class="text-xl font-bold mb-2">Grantly</h3>
+						<p class="text-gray-600 mb-4">Authorization for Stripe and Lemon Squeezy. No more managing customer entitlements.</p>
+						<div class="flex gap-2">
+							<a href="https://grantly.co" class="text-blue-500 hover:underline">grantly.co</a>
+							/
+							<a href="https://github.com/mackenzienolan/grantly" class="text-blue-500 hover:underline">GitHub</a>
+						</div>
+					</div>
+
+					<!-- Project Card 3 -->
+					<!-- <div class="border rounded-lg p-6 hover:shadow-lg transition">
+						<h3 class="text-xl font-bold mb-2">Project Name</h3>
+						<p class="text-gray-600 mb-4">Brief description of your project and what technologies you used.</p>
+						<div class="flex gap-2">
+							<a href="#" class="text-blue-500 hover:underline">Demo</a>
+							<a href="#" class="text-blue-500 hover:underline">GitHub</a>
+						</div>
+					</div> -->
+				</div>
+			</section>
+
+			<section class="mb-16" id="experience">
+				<h2 class="text-3xl font-bold mb-8">Past Work Experience</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<!-- Project Card 1 -->
+					<div class="border rounded-lg p-6 hover:shadow-lg transition">
+						<div class="flex flex-row gap-2">
+							<img src="/locorum.webp" alt="Locorum" class="w-8 h-8 rounded-full" />
+							<h3 class="text-xl font-bold mb-2">  Locorum</h3>
+						</div>
+						<p class="text-gray-600 mb-4">Developed a platform for sending custom branded MasterCard's to customers for loyalty rewards.</p>
+						<div class="flex gap-2">
+							<a href="https://locorum.io" class="text-blue-500 hover:underline">locorum.io</a>
+						</div>
+					</div>
+
+					<!-- Project Card 2 -->
+					<div class="border rounded-lg p-6 hover:shadow-lg transition">
+						<div class="flex flex-row gap-2">
+							<img src="/kwikstate.png" alt="Kwik State" class="w-6 h-6 rounded-full" />
+							<h3 class="text-xl font-bold mb-2">Kwik State</h3>
+						</div>
+						<p class="text-gray-600 mb-4">Developed a platform for listening to Kwik State by NuCalm. This is a partnership between influencer Jim Kwik and NuCalm. I worked on developing the E-Commerce checkout and audio streaming platform.</p>
+						<div class="flex gap-2">
+							<a href="https://app.kwikstate.nucalm.com/checkout" class="text-blue-500 hover:underline">Kwik State</a>
+						</div>
+					</div>
+
+					<!-- Project Card 3 -->
+					<div class="border rounded-lg p-6 hover:shadow-lg transition">
+						<h3 class="text-xl font-bold mb-2">NuCalm</h3>
+						<p class="text-gray-600 mb-4">Developed a platform for purchasing subscription to NuCalm's products as well as managing subscriptions.</p>
+						<div class="flex gap-2">
+							<a href="https://nucalm.com/" class="text-blue-500 hover:underline">nucalm.com</a>
+						</div>
+					</div>
+					<div class="border rounded-lg p-6 hover:shadow-lg transition">
+						<h3 class="text-xl font-bold mb-2">Jack Health / Jill Health</h3>
+						<p class="text-gray-600 mb-4">Worked on extending Big Commerce to integrate with Jack / Jill's Platform. As well as worked on the launch of the jill.health application.</p>
+						<div class="flex gap-2">
+							<a href="https://jack.health/" class="text-blue-500 hover:underline">jack.health</a>
+							/
+							<a href="https://jill.health/" class="text-blue-500 hover:underline">jill.health</a>
+						</div>
+					</div>
+					<div class="border rounded-lg p-6 hover:shadow-lg transition">
+						<h3 class="text-xl font-bold mb-2">ShutterShare</h3>
+						<p class="text-gray-600 mb-4">Developed a marketplace for video and photo content creators to share their equipment. Developed systems to secure and automate verification and validation of users, issue insurance. Developed in-app realtime chat to ensure users were communicating securely.</p>
+						<div class="flex gap-2">
+							<a href="https://web.archive.org/web/20180725052420/http://shuttershare.io/" class="text-blue-500 hover:underline">Web Archive</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -1,0 +1,206 @@
+time=2025-02-12T09:45:44.826-05:00 level=INFO msg="checking for pulumi" path="/Users/mackenzienolan/Library/Application Support/sst/bin/pulumi"
+time=2025-02-12T09:45:45.110-05:00 level=INFO msg="pulumi install"
+time=2025-02-12T09:45:45.110-05:00 level=INFO msg="pulumi downloading" url=https://github.com/pulumi/pulumi/releases/download/v3.146.0/pulumi-v3.146.0-darwin-arm64.tar.gz
+time=2025-02-12T09:45:49.526-05:00 level=INFO msg="checking for bun" path="/Users/mackenzienolan/Library/Application Support/sst/bin/bun"
+time=2025-02-12T09:45:49.541-05:00 level=INFO msg="bun install"
+time=2025-02-12T09:45:49.541-05:00 level=INFO msg="bun selected" filename=bun-darwin-aarch64.zip
+time=2025-02-12T09:45:49.541-05:00 level=INFO msg="bun downloading" url=https://github.com/oven-sh/bun/releases//download/bun-v1.2.1/bun-darwin-aarch64.zip
+time=2025-02-12T09:45:52.145-05:00 level=INFO msg="initializing project" version=3.8.4
+time=2025-02-12T09:45:52.147-05:00 level=INFO msg="esbuild building" out=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/platform/sst.config.1739371552147.mjs
+time=2025-02-12T09:45:52.152-05:00 level=INFO msg="esbuild built" outfile=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/platform/sst.config.1739371552147.mjs
+time=2025-02-12T09:45:52.153-05:00 level=INFO msg="evaluating config"
+time=2025-02-12T09:45:52.200-05:00 level=INFO msg="config evaluated"
+time=2025-02-12T09:45:52.201-05:00 level=INFO msg="checking platform"
+time=2025-02-12T09:45:52.201-05:00 level=INFO msg="installing platform"
+time=2025-02-12T09:45:52.243-05:00 level=INFO msg="installing deps"
+time=2025-02-12T09:45:52.243-05:00 level=INFO msg="getting package" name=@sst-provider/aws version=latest
+time=2025-02-12T09:45:52.384-05:00 level=INFO msg="getting package" name=@pulumi/aws version=latest
+time=2025-02-12T09:45:52.569-05:00 level=INFO msg="writing package.json"
+time=2025-02-12T09:45:52.570-05:00 level=INFO msg="adding dependency" name=aws
+time=2025-02-12T09:45:52.570-05:00 level=INFO msg="fetching deps"
+time=2025-02-12T09:45:55.946-05:00 level=INFO msg="writing types"
+time=2025-02-12T09:45:55.946-05:00 level=INFO msg="loading home"
+time=2025-02-12T09:45:56.459-05:00 level=INFO msg="aws credentials found" region=us-east-1 profile=macknolan-dev
+time=2025-02-12T09:45:56.460-05:00 level=INFO msg="fetching bootstrap"
+time=2025-02-12T09:45:56.654-05:00 level=INFO msg="found existing bootstrap" data="{\"version\":5,\"asset\":\"sst-asset-cfrofcnfbvtt\",\"assetEcrRegistryId\":\"412381756929\",\"assetEcrUrl\":\"412381756929.dkr.ecr.us-east-1.amazonaws.com/sst-asset\",\"state\":\"sst-state-cfrofcnfbvtt\",\"appsyncHttp\":\"2uz5xmvlfjdnjljwerfautfkxm.appsync-api.us-east-1.amazonaws.com\",\"appsyncRealtime\":\"2uz5xmvlfjdnjljwerfautfkxm.appsync-realtime-api.us-east-1.amazonaws.com\"}"
+time=2025-02-12T09:45:56.654-05:00 level=INFO msg="loaded config" app=www stage=mackenzienolan
+time=2025-02-12T09:45:56.655-05:00 level=INFO msg=mosaic project=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro
+time=2025-02-12T09:45:56.655-05:00 level=INFO msg="starting watcher" service=watcher root=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro
+time=2025-02-12T09:45:56.655-05:00 level=INFO msg="server port assigned" port=13557
+time=2025-02-12T09:45:56.655-05:00 level=INFO msg=starting service=server
+time=2025-02-12T09:45:56.655-05:00 level=INFO msg=starting service=dev
+time=2025-02-12T09:45:56.655-05:00 level=INFO msg="getting endpoint"
+time=2025-02-12T09:45:56.656-05:00 level=INFO msg=starting service=deployer
+time=2025-02-12T09:45:56.656-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:45:56.656-05:00 level=INFO msg=server service=server addr=0.0.0.0:13557
+time=2025-02-12T09:45:56.657-05:00 level=INFO msg=watching service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro
+time=2025-02-12T09:45:56.658-05:00 level=INFO msg=watching service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/public
+time=2025-02-12T09:45:56.659-05:00 level=INFO msg=resize
+time=2025-02-12T09:45:56.659-05:00 level=INFO msg=watching service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/public/fonts
+time=2025-02-12T09:45:56.660-05:00 level=INFO msg=watching service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/src
+time=2025-02-12T09:45:56.660-05:00 level=INFO msg=watching service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/src/components
+time=2025-02-12T09:45:56.660-05:00 level=INFO msg=watching service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/src/content
+time=2025-02-12T09:45:56.660-05:00 level=INFO msg=watching service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/src/content/blog
+time=2025-02-12T09:45:56.661-05:00 level=INFO msg=watching service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/src/lib
+time=2025-02-12T09:45:56.662-05:00 level=INFO msg=watching service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/src/pages
+time=2025-02-12T09:45:56.662-05:00 level=INFO msg=watching service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/src/styles
+time=2025-02-12T09:45:56.667-05:00 level=INFO msg=resize
+time=2025-02-12T09:45:57.006-05:00 level=INFO msg="found appsync" rest=2uz5xmvlfjdnjljwerfautfkxm.appsync-api.us-east-1.amazonaws.com realtime=2uz5xmvlfjdnjljwerfautfkxm.appsync-realtime-api.us-east-1.amazonaws.com
+time=2025-02-12T09:45:57.007-05:00 level=INFO msg="checking if appsync is ready"
+time=2025-02-12T09:45:57.152-05:00 level=INFO msg="INFO connecting service=appsync.connection"
+time=2025-02-12T09:45:57.577-05:00 level=INFO msg="INFO connect message service=appsync.connection msg=\"map[connectionTimeoutMs:300000 type:connection_ack]\""
+time=2025-02-12T09:45:57.577-05:00 level=INFO msg="subscribing to" prefix=/sst/www/mackenzienolan/in
+time=2025-02-12T09:45:57.577-05:00 level=INFO msg="INFO msg service=appsync.connection type=ka id=<nil>"
+time=2025-02-12T09:45:57.739-05:00 level=INFO msg=subscribed service=dev addr=[::1]:51922
+time=2025-02-12T09:45:57.740-05:00 level=INFO msg="deploy requested" service=dev
+time=2025-02-12T09:45:57.740-05:00 level=INFO msg=deploying service=deployer
+time=2025-02-12T09:45:57.740-05:00 level=INFO msg="running stack command" service=project.run cmd=deploy
+time=2025-02-12T09:45:57.740-05:00 level=INFO msg="INFO locking app=www stage=mackenzienolan"
+time=2025-02-12T09:45:57.740-05:00 level=INFO msg="INFO getting data key=lock app=www stage=mackenzienolan"
+time=2025-02-12T09:45:57.742-05:00 level=INFO msg=subscribed service=dev addr=[::1]:51926
+time=2025-02-12T09:45:57.962-05:00 level=INFO msg="INFO msg service=appsync.connection type=subscribe_success id=0194fa9fb2c94d066a561e17"
+time=2025-02-12T09:45:57.962-05:00 level=INFO msg="INFO subscribed service=appsync.connection channel=/sst/www/mackenzienolan/in id=0194fa9fb2c94d066a561e17"
+time=2025-02-12T09:45:57.962-05:00 level=INFO msg=starting service=aws.task
+time=2025-02-12T09:45:58.022-05:00 level=INFO msg="INFO putting update app=www stage=mackenzienolan"
+time=2025-02-12T09:45:58.139-05:00 level=INFO msg="INFO getting passphrase app=www stage=mackenzienolan"
+time=2025-02-12T09:45:58.284-05:00 level=INFO msg="INFO pulling state app=www stage=mackenzienolan out=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/pulumi/fe6b05604c936079b9b77b82/.pulumi/stacks/www/mackenzienolan.json"
+time=2025-02-12T09:45:58.595-05:00 level=INFO msg="got previous deployment" service=project.run updateID=fe6b05604c936079b9b77b82
+time=2025-02-12T09:45:58.595-05:00 level=INFO msg="esbuild building" out=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/platform/sst.config.1739371558283.mjs
+time=2025-02-12T09:45:58.628-05:00 level=INFO msg="esbuild built" outfile=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/platform/sst.config.1739371558283.mjs
+time=2025-02-12T09:45:58.634-05:00 level=INFO msg="built sst.config.ts" service=project.run updateID=fe6b05604c936079b9b77b82 to=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/platform/sst.config.1739371558283.mjs
+time=2025-02-12T09:45:58.636-05:00 level=INFO msg="tracked files" service=project.run updateID=fe6b05604c936079b9b77b82
+time=2025-02-12T09:45:58.636-05:00 level=INFO msg="INFO getting data key=secret app=www stage=_fallback"
+time=2025-02-12T09:45:58.636-05:00 level=INFO msg="INFO getting data key=secret app=www stage=mackenzienolan"
+time=2025-02-12T09:45:58.738-05:00 level=INFO msg="starting pulumi" service=project.run updateID=fe6b05604c936079b9b77b82 args="[/Users/mackenzienolan/Library/Application Support/sst/bin/pulumi up --yes -f --stack organization/www/mackenzienolan --non-interactive --event-log /Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/pulumi/fe6b05604c936079b9b77b82/eventlog.json --config aws:defaultTags={\"tags\":{\"sst:app\":\"www\",\"sst:stage\":\"mackenzienolan\"}} --config aws:region=us-east-1]"
+time=2025-02-12T09:45:58.847-05:00 level=INFO msg=subscribed service=dev addr=[::1]:51943
+time=2025-02-12T09:45:58.849-05:00 level=INFO msg="matching dev" service=dev full=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro directory=""
+time=2025-02-12T09:45:58.849-05:00 level=INFO msg="loading aws credentials" service=project.env resource=www role=arn:aws:iam::412381756929:role/www-mackenzienolan-wwwDevServerRole-useast1
+time=2025-02-12T09:45:59.001-05:00 level=ERROR msg="failed to load aws credentials" service=project.env resource=www err=<nil>
+time=2025-02-12T09:45:59.001-05:00 level=INFO msg=dev service=project.env resource=www links=[]
+time=2025-02-12T09:46:03.740-05:00 level=INFO msg="INFO pushing partial state updateID=fe6b05604c936079b9b77b82"
+time=2025-02-12T09:46:04.003-05:00 level=INFO msg="INFO pushing partial state updateID=fe6b05604c936079b9b77b82"
+time=2025-02-12T09:46:04.205-05:00 level=INFO msg="INFO pushing partial state updateID=fe6b05604c936079b9b77b82"
+time=2025-02-12T09:46:04.514-05:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-02-12T09:46:04.826-05:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-02-12T09:46:04.827-05:00 level=INFO msg="building function" runtime=nodejs20.x functionID=wwwDevServer
+time=2025-02-12T09:46:04.827-05:00 level=INFO msg="function built" runtime=nodejs20.x functionID=wwwDevServer
+time=2025-02-12T09:46:04.875-05:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-02-12T09:46:04.910-05:00 level=INFO msg="INFO pushing partial state updateID=fe6b05604c936079b9b77b82"
+time=2025-02-12T09:46:05.109-05:00 level=INFO msg="INFO pushing partial state updateID=fe6b05604c936079b9b77b82"
+time=2025-02-12T09:46:05.256-05:00 level=INFO msg="INFO pushing partial state updateID=fe6b05604c936079b9b77b82"
+time=2025-02-12T09:46:06.724-05:00 level=INFO msg="socket upgrading" service=socket addr=[::1]:52019
+time=2025-02-12T09:46:06.725-05:00 level=INFO msg="socket connected" service=socket addr=[::1]:52019
+time=2025-02-12T09:46:06.725-05:00 level=INFO msg="sending invocations" service=socket count=0
+time=2025-02-12T09:46:20.142-05:00 level=INFO msg="INFO pushing partial state updateID=fe6b05604c936079b9b77b82"
+time=2025-02-12T09:46:22.764-05:00 level=INFO msg="INFO pushing partial state updateID=fe6b05604c936079b9b77b82"
+time=2025-02-12T09:46:23.076-05:00 level=INFO msg="INFO pushing partial state updateID=fe6b05604c936079b9b77b82"
+time=2025-02-12T09:46:23.283-05:00 level=INFO msg="pulumi exited" service=project.run updateID=fe6b05604c936079b9b77b82 err=<nil>
+time=2025-02-12T09:46:23.283-05:00 level=INFO msg="eof and exited" service=project.run updateID=fe6b05604c936079b9b77b82 eofs=0
+time=2025-02-12T09:46:23.283-05:00 level=INFO msg="eof and exited" service=project.run updateID=fe6b05604c936079b9b77b82 eofs=1
+time=2025-02-12T09:46:23.283-05:00 level=INFO msg="breaking out of tail loop" service=project.run updateID=fe6b05604c936079b9b77b82
+time=2025-02-12T09:46:23.283-05:00 level=INFO msg="parsing state" service=project.run updateID=fe6b05604c936079b9b77b82
+time=2025-02-12T09:46:23.356-05:00 level=INFO msg="INFO pushing partial state updateID=fe6b05604c936079b9b77b82"
+time=2025-02-12T09:46:23.407-05:00 level=INFO msg="generating types" root=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro
+time=2025-02-12T09:46:23.408-05:00 level=INFO msg="file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/sst-env.d.ts op=CREATE
+time=2025-02-12T09:46:23.408-05:00 level=INFO msg="checking if code needs to be rebuilt" service=aws.function file=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/sst-env.d.ts
+time=2025-02-12T09:46:23.408-05:00 level=INFO msg="canceling partial" service=project.run updateID=fe6b05604c936079b9b77b82
+time=2025-02-12T09:46:23.408-05:00 level=INFO msg="waiting for partial to exit" service=project.run updateID=fe6b05604c936079b9b77b82
+time=2025-02-12T09:46:23.663-05:00 level=INFO msg="INFO pushing snapshot updateID=fe6b05604c936079b9b77b82"
+time=2025-02-12T09:46:23.663-05:00 level=INFO msg="INFO pushing eventlog updateID=fe6b05604c936079b9b77b82"
+time=2025-02-12T09:46:23.955-05:00 level=INFO msg="INFO putting update app=www stage=mackenzienolan"
+time=2025-02-12T09:46:24.173-05:00 level=INFO msg="done running stack command" service=project.run updateID=fe6b05604c936079b9b77b82
+time=2025-02-12T09:46:24.176-05:00 level=INFO msg="matching dev" service=dev full=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro directory=""
+time=2025-02-12T09:46:24.176-05:00 level=INFO msg="loading aws credentials" service=project.env resource=www role=arn:aws:iam::412381756929:role/www-mackenzienolan-wwwDevServerRole-odafmeun
+time=2025-02-12T09:46:24.179-05:00 level=INFO msg="INFO unlocking app=www stage=mackenzienolan"
+time=2025-02-12T09:46:24.352-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:46:24.352-05:00 level=INFO msg="build hash" service=deployer hash=xtv+IPejHwo
+time=2025-02-12T09:46:24.352-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:46:24.352-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:46:24.352-05:00 level=ERROR msg="failed to load aws credentials" service=project.env resource=www err=<nil>
+time=2025-02-12T09:46:24.352-05:00 level=INFO msg=dev service=project.env resource=www links=[]
+time=2025-02-12T09:46:25.395-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/sst-env.d.ts op=CHMOD
+time=2025-02-12T09:46:28.251-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/sst.config.ts op=CHMOD
+time=2025-02-12T09:46:28.251-05:00 level=INFO msg="file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/sst.config.ts op=WRITE
+time=2025-02-12T09:46:28.251-05:00 level=INFO msg=deploying service=deployer
+time=2025-02-12T09:46:28.251-05:00 level=INFO msg="running stack command" service=project.run cmd=deploy
+time=2025-02-12T09:46:28.251-05:00 level=INFO msg="checking if code needs to be rebuilt" service=aws.function file=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/sst.config.ts
+time=2025-02-12T09:46:28.251-05:00 level=INFO msg="INFO locking app=www stage=mackenzienolan"
+time=2025-02-12T09:46:28.251-05:00 level=INFO msg="INFO getting data key=lock app=www stage=mackenzienolan"
+time=2025-02-12T09:46:28.536-05:00 level=INFO msg="INFO putting update app=www stage=mackenzienolan"
+time=2025-02-12T09:46:28.682-05:00 level=INFO msg="INFO getting passphrase app=www stage=mackenzienolan"
+time=2025-02-12T09:46:28.852-05:00 level=INFO msg="INFO pulling state app=www stage=mackenzienolan out=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/pulumi/fe6b055fd5644ef07991baf5/.pulumi/stacks/www/mackenzienolan.json"
+time=2025-02-12T09:46:28.984-05:00 level=INFO msg="got previous deployment" service=project.run updateID=fe6b055fd5644ef07991baf5
+time=2025-02-12T09:46:28.984-05:00 level=INFO msg="esbuild building" out=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/platform/sst.config.1739371588851.mjs
+time=2025-02-12T09:46:28.985-05:00 level=INFO msg="matching dev" service=dev full=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro directory=""
+time=2025-02-12T09:46:28.985-05:00 level=INFO msg="loading aws credentials" service=project.env resource=www role=arn:aws:iam::412381756929:role/www-mackenzienolan-wwwDevServerRole-odafmeun
+time=2025-02-12T09:46:29.025-05:00 level=INFO msg="esbuild built" outfile=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/platform/sst.config.1739371588851.mjs
+time=2025-02-12T09:46:29.035-05:00 level=INFO msg="built sst.config.ts" service=project.run updateID=fe6b055fd5644ef07991baf5 to=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/platform/sst.config.1739371588851.mjs
+time=2025-02-12T09:46:29.038-05:00 level=INFO msg="tracked files" service=project.run updateID=fe6b055fd5644ef07991baf5
+time=2025-02-12T09:46:29.038-05:00 level=INFO msg="INFO getting data key=secret app=www stage=_fallback"
+time=2025-02-12T09:46:29.038-05:00 level=INFO msg="INFO getting data key=secret app=www stage=mackenzienolan"
+time=2025-02-12T09:46:29.142-05:00 level=INFO msg="starting pulumi" service=project.run updateID=fe6b055fd5644ef07991baf5 args="[/Users/mackenzienolan/Library/Application Support/sst/bin/pulumi up --yes -f --stack organization/www/mackenzienolan --non-interactive --event-log /Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/pulumi/fe6b055fd5644ef07991baf5/eventlog.json --config aws:defaultTags={\"tags\":{\"sst:app\":\"www\",\"sst:stage\":\"mackenzienolan\"}} --config aws:region=us-east-1]"
+time=2025-02-12T09:46:29.225-05:00 level=ERROR msg="failed to load aws credentials" service=project.env resource=www err=<nil>
+time=2025-02-12T09:46:29.225-05:00 level=INFO msg=dev service=project.env resource=www links=[]
+time=2025-02-12T09:46:29.591-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/sst.config.ts op=CHMOD
+time=2025-02-12T09:46:32.776-05:00 level=INFO msg="INFO pushing partial state updateID=fe6b055fd5644ef07991baf5"
+time=2025-02-12T09:46:33.370-05:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-02-12T09:46:33.371-05:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-02-12T09:46:33.371-05:00 level=INFO msg="building function" runtime=nodejs20.x functionID=wwwDevServer
+time=2025-02-12T09:46:33.371-05:00 level=INFO msg="function built" runtime=nodejs20.x functionID=wwwDevServer
+time=2025-02-12T09:46:33.433-05:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-02-12T09:46:33.481-05:00 level=INFO msg="pulumi exited" service=project.run updateID=fe6b055fd5644ef07991baf5 err=<nil>
+time=2025-02-12T09:46:33.481-05:00 level=INFO msg="eof and exited" service=project.run updateID=fe6b055fd5644ef07991baf5 eofs=0
+time=2025-02-12T09:46:33.481-05:00 level=INFO msg="INFO pushing partial state updateID=fe6b055fd5644ef07991baf5"
+time=2025-02-12T09:46:33.482-05:00 level=INFO msg="eof and exited" service=project.run updateID=fe6b055fd5644ef07991baf5 eofs=1
+time=2025-02-12T09:46:33.482-05:00 level=INFO msg="breaking out of tail loop" service=project.run updateID=fe6b055fd5644ef07991baf5
+time=2025-02-12T09:46:33.482-05:00 level=INFO msg="parsing state" service=project.run updateID=fe6b055fd5644ef07991baf5
+time=2025-02-12T09:46:33.594-05:00 level=INFO msg="generating types" root=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro
+time=2025-02-12T09:46:33.595-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/sst-env.d.ts op=CHMOD
+time=2025-02-12T09:46:33.595-05:00 level=INFO msg="file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/sst-env.d.ts op=WRITE
+time=2025-02-12T09:46:33.595-05:00 level=INFO msg="file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/sst-env.d.ts op=WRITE
+time=2025-02-12T09:46:33.595-05:00 level=INFO msg="checking if code needs to be rebuilt" service=aws.function file=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/sst-env.d.ts
+time=2025-02-12T09:46:33.595-05:00 level=INFO msg="canceling partial" service=project.run updateID=fe6b055fd5644ef07991baf5
+time=2025-02-12T09:46:33.595-05:00 level=INFO msg="waiting for partial to exit" service=project.run updateID=fe6b055fd5644ef07991baf5
+time=2025-02-12T09:46:33.635-05:00 level=INFO msg="INFO pushing snapshot updateID=fe6b055fd5644ef07991baf5"
+time=2025-02-12T09:46:33.635-05:00 level=INFO msg="INFO pushing eventlog updateID=fe6b055fd5644ef07991baf5"
+time=2025-02-12T09:46:33.909-05:00 level=INFO msg="INFO putting update app=www stage=mackenzienolan"
+time=2025-02-12T09:46:34.058-05:00 level=INFO msg="done running stack command" service=project.run updateID=fe6b055fd5644ef07991baf5
+time=2025-02-12T09:46:34.063-05:00 level=INFO msg="matching dev" service=dev full=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro directory=""
+time=2025-02-12T09:46:34.063-05:00 level=INFO msg="loading aws credentials" service=project.env resource=www role=arn:aws:iam::412381756929:role/www-mackenzienolan-wwwDevServerRole-odafmeun
+time=2025-02-12T09:46:34.065-05:00 level=INFO msg="INFO unlocking app=www stage=mackenzienolan"
+time=2025-02-12T09:46:34.175-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:46:34.175-05:00 level=INFO msg="build hash" service=deployer hash=xtv+IPejHwo
+time=2025-02-12T09:46:34.175-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:46:34.175-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:46:34.184-05:00 level=ERROR msg="failed to load aws credentials" service=project.env resource=www err=<nil>
+time=2025-02-12T09:46:34.184-05:00 level=INFO msg=dev service=project.env resource=www links=[]
+time=2025-02-12T09:46:35.948-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/sst-env.d.ts op=CHMOD
+time=2025-02-12T09:46:49.212-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json op=CHMOD
+time=2025-02-12T09:46:49.212-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json op=CHMOD
+time=2025-02-12T09:46:49.213-05:00 level=INFO msg="file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json op=WRITE
+time=2025-02-12T09:46:49.213-05:00 level=INFO msg="checking if code needs to be rebuilt" service=aws.function file=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json
+time=2025-02-12T09:46:49.213-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:46:54.499-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json op=CHMOD
+time=2025-02-12T09:46:54.499-05:00 level=INFO msg="file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json op=WRITE
+time=2025-02-12T09:46:54.499-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:46:54.500-05:00 level=INFO msg="checking if code needs to be rebuilt" service=aws.function file=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json
+time=2025-02-12T09:46:57.127-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json op=CHMOD
+time=2025-02-12T09:46:57.127-05:00 level=INFO msg="file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json op=WRITE
+time=2025-02-12T09:46:57.127-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:46:57.127-05:00 level=INFO msg="checking if code needs to be rebuilt" service=aws.function file=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json
+time=2025-02-12T09:46:57.591-05:00 level=INFO msg="INFO msg service=appsync.connection type=ka id=<nil>"
+time=2025-02-12T09:46:58.639-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json op=CHMOD
+time=2025-02-12T09:46:58.640-05:00 level=INFO msg="file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json op=WRITE
+time=2025-02-12T09:46:58.640-05:00 level=INFO msg="checking if code needs to be rebuilt" service=aws.function file=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/package.json
+time=2025-02-12T09:46:58.640-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:47:02.162-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/src/pages/index.astro op=CHMOD
+time=2025-02-12T09:47:02.164-05:00 level=INFO msg="file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/src/pages/index.astro op=WRITE
+time=2025-02-12T09:47:02.164-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:47:02.164-05:00 level=INFO msg="checking if code needs to be rebuilt" service=aws.function file=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/src/pages/index.astro
+time=2025-02-12T09:47:03.257-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/src/pages/index.astro op=CHMOD
+time=2025-02-12T09:47:22.720-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/astro.config.mjs op=CHMOD
+time=2025-02-12T09:47:22.725-05:00 level=INFO msg="file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/astro.config.mjs op=WRITE
+time=2025-02-12T09:47:22.725-05:00 level=INFO msg="waiting for trigger" service=deployer
+time=2025-02-12T09:47:22.725-05:00 level=INFO msg="checking if code needs to be rebuilt" service=aws.function file=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/astro.config.mjs
+time=2025-02-12T09:47:24.618-05:00 level=INFO msg="ignoring file event" service=watcher path=/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/astro.config.mjs op=CHMOD
+time=2025-02-12T09:47:57.599-05:00 level=INFO msg="INFO msg service=appsync.connection type=ka id=<nil>"

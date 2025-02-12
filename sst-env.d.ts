@@ -7,7 +7,7 @@ export {}
 declare module "sst" {
   export interface Resource {
     "www": {
-      "type": "sst.aws.SvelteKit"
+      "type": "sst.aws.Astro"
       "url": string
     }
   }

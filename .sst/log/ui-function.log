@@ -1,0 +1,6 @@
+time=2025-02-12T09:45:56.716-05:00 level=INFO msg="checking for pulumi" path="/Users/mackenzienolan/Library/Application Support/sst/bin/pulumi"
+time=2025-02-12T09:45:57.736-05:00 level=INFO msg="checking for bun" path="/Users/mackenzienolan/Library/Application Support/sst/bin/bun"
+time=2025-02-12T09:45:57.742-05:00 level=INFO msg="initializing ui" isTTY=true
+time=2025-02-12T09:45:57.742-05:00 level=INFO msg="initialized ui"
+ isTTY=true
+time=2025-02-12T09:45:57.740-05:00 level=INFO msg="initialized ui"

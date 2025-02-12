@@ -1,0 +1,535 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/www/mackenzienolan",
+        "latest": {
+            "manifest": {
+                "time": "2025-02-12T09:48:35.566694-05:00",
+                "magic": "77be084e65c763fde87b290a0a6ba5aaacad687cde41d20d76768df34b0db77a",
+                "version": "v3.146.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:lqYaHE33D4E=:v1:kdLYFzZ3F8af/7ie:KYzfu1Csu5mU7zSKLEZhYlDZhvBIRw=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:mackenzienolan::www::pulumi:pulumi:Stack::www-mackenzienolan",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "outputs": {
+                        "_protect": false
+                    },
+                    "created": "2024-11-07T16:16:28.451747Z",
+                    "modified": "2024-11-07T16:16:28.451747Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/runtime/stack.ts#38,23"
+                },
+                {
+                    "urn": "urn:pulumi:mackenzienolan::www::sst:aws:Astro::www",
+                    "custom": false,
+                    "type": "sst:aws:Astro",
+                    "outputs": {
+                        "_dev": {
+                            "autostart": true,
+                            "aws": {
+                                "role": "arn:aws:iam::412381756929:role/www-mackenzienolan-wwwDevServerRole-odafmeun"
+                            },
+                            "command": "npm run dev",
+                            "directory": ".",
+                            "links": []
+                        },
+                        "_metadata": {
+                            "mode": "placeholder",
+                            "path": ".",
+                            "server": {
+                                "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                                "ciphertext": "v1:p0UExs/LLOKnul0k:6WPgOcZQ2OzFmDtLwLdl78GtdOW0dK42sivUuZVgoCKY9+u0ho7G1OCgR+gnKQe9mBRJC4ooT+LZSkUa1OPOr00Zu+48gNJBEGrRprBMyn7kOOhP32R3oTDeAxY49GPKelXtQ9OiP9mkGyvbXla9Egk="
+                            }
+                        }
+                    },
+                    "parent": "urn:pulumi:mackenzienolan::www::pulumi:pulumi:Stack::www-mackenzienolan",
+                    "created": "2025-02-12T14:46:01.701867Z",
+                    "modified": "2025-02-12T14:46:01.701867Z",
+                    "sourcePosition": "project:///../file:/Users/mackenzienolan/Documents/Developer/git/macknolan/www/.sst/platform/src/components/aws/astro.ts#358,5"
+                },
+                {
+                    "urn": "urn:pulumi:mackenzienolan::www::sst:sst:LinkRef::wwwLinkRef",
+                    "custom": false,
+                    "type": "sst:sst:LinkRef",
+                    "outputs": {
+                        "properties": {
+                            "type": "sst.aws.Astro",
+                            "url": "http://url-unavailable-in-dev.mode"
+                        },
+                        "target": "www"
+                    },
+                    "parent": "urn:pulumi:mackenzienolan::www::pulumi:pulumi:Stack::www-mackenzienolan",
+                    "created": "2024-11-07T16:16:29.56692Z",
+                    "modified": "2024-11-07T16:16:29.56692Z",
+                    "sourcePosition": "project:///../file:/Users/mackenzienolan/Documents/Developer/git/macknolan/www/.sst/platform/src/components/link.ts#25,7"
+                },
+                {
+                    "urn": "urn:pulumi:mackenzienolan::www::pulumi:providers:aws::default_6_66_2",
+                    "custom": true,
+                    "id": "29337d9b-a75d-45b4-b4f3-500f5c27c71b",
+                    "type": "pulumi:providers:aws",
+                    "inputs": {
+                        "__internal": {},
+                        "defaultTags": "{\"tags\":{\"sst:app\":\"www\",\"sst:stage\":\"mackenzienolan\"}}",
+                        "region": "us-east-1",
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.66.2"
+                    },
+                    "outputs": {
+                        "defaultTags": "{\"tags\":{\"sst:app\":\"www\",\"sst:stage\":\"mackenzienolan\"}}",
+                        "region": "us-east-1",
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.66.2"
+                    },
+                    "created": "2025-02-12T14:46:03.906999Z",
+                    "modified": "2025-02-12T14:46:03.906999Z"
+                },
+                {
+                    "urn": "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function::wwwDevServer",
+                    "custom": false,
+                    "type": "sst:aws:Function",
+                    "outputs": {
+                        "_metadata": {
+                            "dev": false,
+                            "handler": "index.handler"
+                        }
+                    },
+                    "parent": "urn:pulumi:mackenzienolan::www::sst:aws:Astro::www",
+                    "created": "2025-02-12T14:46:03.910475Z",
+                    "modified": "2025-02-12T14:46:03.910475Z",
+                    "sourcePosition": "project:///../file:/Users/mackenzienolan/Documents/Developer/git/macknolan/www/.sst/platform/src/components/aws/function.ts#1333,5"
+                },
+                {
+                    "urn": "urn:pulumi:mackenzienolan::www::pulumi:providers:random::default_4_16_6",
+                    "custom": true,
+                    "id": "c1a815e6-cf7e-4716-8223-6d94a260f999",
+                    "type": "pulumi:providers:random",
+                    "inputs": {
+                        "__internal": {},
+                        "version": "4.16.6"
+                    },
+                    "outputs": {
+                        "version": "4.16.6"
+                    },
+                    "created": "2025-02-12T14:46:04.114439Z",
+                    "modified": "2025-02-12T14:46:04.114439Z"
+                },
+                {
+                    "urn": "urn:pulumi:mackenzienolan::www::random:index/randomBytes:RandomBytes::LambdaEncryptionKey",
+                    "custom": true,
+                    "id": "wcgW087a/OBgf8ehZjmsmpxvWDwuXvKSBGedT5FddwE=",
+                    "type": "random:index/randomBytes:RandomBytes",
+                    "inputs": {
+                        "length": 32
+                    },
+                    "outputs": {
+                        "base64": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:3FiO7tNXn6HG/R6O:x7MPL2mq2d8ILwXvO+fLb9S29Wp43ORuXVtF7fODtLMIhIuIvz9w7mH1GT86AtKWkjRZm/GO2y0Ov4fXuLc="
+                        },
+                        "hex": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:tCqGat0C5Q2L8RZ7:mxeJXqI1zfs4ZXuFehlZqxwO4N9gtcL1yMNB1jd1tvAfZGEf9anqd8B/mr9Tmr48mBzj9ZLgD1thXjhThHOUi9Nb2IY/LTRjkD8rr7u8rEu7KQ=="
+                        },
+                        "length": 32
+                    },
+                    "parent": "urn:pulumi:mackenzienolan::www::pulumi:pulumi:Stack::www-mackenzienolan",
+                    "provider": "urn:pulumi:mackenzienolan::www::pulumi:providers:random::default_4_16_6::c1a815e6-cf7e-4716-8223-6d94a260f999",
+                    "propertyDependencies": {
+                        "length": []
+                    },
+                    "additionalSecretOutputs": [
+                        "base64",
+                        "hex"
+                    ],
+                    "created": "2024-11-07T16:16:31.611858Z",
+                    "modified": "2024-11-07T16:16:31.611858Z",
+                    "sourcePosition": "project:///../file:/Users/mackenzienolan/Documents/Developer/git/macknolan/www/.sst/platform/src/util/lazy.ts#8,16"
+                },
+                {
+                    "urn": "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function$aws:cloudwatch/logGroup:LogGroup::wwwDevServerLogGroup",
+                    "custom": true,
+                    "id": "/aws/lambda/www-mackenzienolan-wwwDevServer-tovcdefd",
+                    "type": "aws:cloudwatch/logGroup:LogGroup",
+                    "inputs": {
+                        "__defaults": [
+                            "skipDestroy"
+                        ],
+                        "name": "/aws/lambda/www-mackenzienolan-wwwDevServer-tovcdefd",
+                        "retentionInDays": 30,
+                        "skipDestroy": false,
+                        "tags": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        },
+                        "tagsAll": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        }
+                    },
+                    "outputs": {
+                        "arn": "arn:aws:logs:us-east-1:412381756929:log-group:/aws/lambda/www-mackenzienolan-wwwDevServer-tovcdefd",
+                        "id": "/aws/lambda/www-mackenzienolan-wwwDevServer-tovcdefd",
+                        "kmsKeyId": "",
+                        "logGroupClass": "STANDARD",
+                        "name": "/aws/lambda/www-mackenzienolan-wwwDevServer-tovcdefd",
+                        "namePrefix": "",
+                        "retentionInDays": 30,
+                        "skipDestroy": false,
+                        "tags": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        },
+                        "tagsAll": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        }
+                    },
+                    "parent": "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function::wwwDevServer",
+                    "provider": "urn:pulumi:mackenzienolan::www::pulumi:providers:aws::default_6_66_2::29337d9b-a75d-45b4-b4f3-500f5c27c71b",
+                    "propertyDependencies": {
+                        "name": [],
+                        "retentionInDays": []
+                    },
+                    "created": "2025-02-12T14:46:04.818667Z",
+                    "modified": "2025-02-12T14:46:04.818667Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/cloudwatch/logGroup.ts#139,9",
+                    "ignoreChanges": [
+                        "name"
+                    ]
+                },
+                {
+                    "urn": "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function$aws:iam/role:Role::wwwDevServerRole",
+                    "custom": true,
+                    "id": "www-mackenzienolan-wwwDevServerRole-odafmeun",
+                    "type": "aws:iam/role:Role",
+                    "inputs": {
+                        "__defaults": [
+                            "forceDetachPolicies",
+                            "maxSessionDuration",
+                            "path"
+                        ],
+                        "assumeRolePolicy": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Effect\": \"Allow\",\n      \"Action\": \"sts:AssumeRole\",\n      \"Principal\": {\n        \"AWS\": \"arn:aws:iam::412381756929:root\",\n        \"Service\": \"lambda.amazonaws.com\"\n      }\n    }\n  ]\n}",
+                        "forceDetachPolicies": false,
+                        "inlinePolicies": [],
+                        "managedPolicyArns": [
+                            "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                        ],
+                        "maxSessionDuration": 3600,
+                        "name": "www-mackenzienolan-wwwDevServerRole-odafmeun",
+                        "path": "/",
+                        "tags": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        },
+                        "tagsAll": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        }
+                    },
+                    "outputs": {
+                        "arn": "arn:aws:iam::412381756929:role/www-mackenzienolan-wwwDevServerRole-odafmeun",
+                        "assumeRolePolicy": "{\"Statement\":[{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::412381756929:root\",\"Service\":\"lambda.amazonaws.com\"}}],\"Version\":\"2012-10-17\"}",
+                        "createDate": "2025-02-12T14:46:04Z",
+                        "description": "",
+                        "forceDetachPolicies": false,
+                        "id": "www-mackenzienolan-wwwDevServerRole-odafmeun",
+                        "inlinePolicies": [],
+                        "managedPolicyArns": [
+                            "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                        ],
+                        "maxSessionDuration": 3600,
+                        "name": "www-mackenzienolan-wwwDevServerRole-odafmeun",
+                        "namePrefix": "",
+                        "path": "/",
+                        "permissionsBoundary": "",
+                        "tags": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        },
+                        "tagsAll": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        },
+                        "uniqueId": "AROAWAA66HYATLWHGE2S2"
+                    },
+                    "parent": "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function::wwwDevServer",
+                    "provider": "urn:pulumi:mackenzienolan::www::pulumi:providers:aws::default_6_66_2::29337d9b-a75d-45b4-b4f3-500f5c27c71b",
+                    "propertyDependencies": {
+                        "assumeRolePolicy": [],
+                        "inlinePolicies": [],
+                        "managedPolicyArns": [],
+                        "name": []
+                    },
+                    "created": "2025-02-12T14:46:05.007147Z",
+                    "modified": "2025-02-12T14:46:05.007147Z",
+                    "sourcePosition": "project:///../file:/Users/mackenzienolan/Documents/Developer/git/macknolan/www/.sst/platform/src/components/aws/function.ts#1836,14",
+                    "ignoreChanges": [
+                        "name"
+                    ]
+                },
+                {
+                    "urn": "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function$aws:s3/bucketObjectv2:BucketObjectv2::wwwDevServerCode",
+                    "custom": true,
+                    "id": "assets/wwwDevServer-code-b94cd6a1ec6d74ea8bfd347f6d53b4d8f13b94e1ac53e5dbbb629f9e1e93658e.zip",
+                    "type": "aws:s3/bucketObjectv2:BucketObjectv2",
+                    "inputs": {
+                        "__defaults": [
+                            "forceDestroy"
+                        ],
+                        "bucket": "sst-asset-cfrofcnfbvtt",
+                        "forceDestroy": false,
+                        "key": "assets/wwwDevServer-code-b94cd6a1ec6d74ea8bfd347f6d53b4d8f13b94e1ac53e5dbbb629f9e1e93658e.zip",
+                        "source": {
+                            "4dabf18193072939515e22adb298388d": "0def7320c3a5731c473e5ecbe6d01bc7",
+                            "hash": "4a1e96d25196cb974e0c800286d74433b2ee6fa1038519ee81cf32890ceea4e6",
+                            "path": "/Users/mackenzienolan/Documents/Developer/git/macknolan/www/.sst/artifacts/wwwDevServer/code.zip"
+                        },
+                        "tags": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        },
+                        "tagsAll": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        }
+                    },
+                    "outputs": {
+                        "acl": null,
+                        "arn": "arn:aws:s3:::sst-asset-cfrofcnfbvtt/assets/wwwDevServer-code-b94cd6a1ec6d74ea8bfd347f6d53b4d8f13b94e1ac53e5dbbb629f9e1e93658e.zip",
+                        "bucket": "sst-asset-cfrofcnfbvtt",
+                        "bucketKeyEnabled": false,
+                        "cacheControl": "",
+                        "checksumAlgorithm": null,
+                        "checksumCrc32": "",
+                        "checksumCrc32c": "",
+                        "checksumSha1": "",
+                        "checksumSha256": "",
+                        "content": null,
+                        "contentBase64": null,
+                        "contentDisposition": "",
+                        "contentEncoding": "",
+                        "contentLanguage": "",
+                        "contentType": "application/octet-stream",
+                        "etag": "d70ccc75cfd58ab92f6441c55b8dbd35",
+                        "forceDestroy": false,
+                        "id": "assets/wwwDevServer-code-b94cd6a1ec6d74ea8bfd347f6d53b4d8f13b94e1ac53e5dbbb629f9e1e93658e.zip",
+                        "key": "assets/wwwDevServer-code-b94cd6a1ec6d74ea8bfd347f6d53b4d8f13b94e1ac53e5dbbb629f9e1e93658e.zip",
+                        "kmsKeyId": null,
+                        "metadata": null,
+                        "objectLockLegalHoldStatus": "",
+                        "objectLockMode": "",
+                        "objectLockRetainUntilDate": "",
+                        "overrideProvider": null,
+                        "serverSideEncryption": "AES256",
+                        "source": {
+                            "4dabf18193072939515e22adb298388d": "0def7320c3a5731c473e5ecbe6d01bc7",
+                            "hash": "4a1e96d25196cb974e0c800286d74433b2ee6fa1038519ee81cf32890ceea4e6",
+                            "path": "/Users/mackenzienolan/Documents/Developer/git/macknolan/www-astro/.sst/artifacts/wwwDevServer/code.zip"
+                        },
+                        "sourceHash": null,
+                        "storageClass": "STANDARD",
+                        "tags": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        },
+                        "tagsAll": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        },
+                        "versionId": "",
+                        "websiteRedirect": ""
+                    },
+                    "parent": "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function::wwwDevServer",
+                    "provider": "urn:pulumi:mackenzienolan::www::pulumi:providers:aws::default_6_66_2::29337d9b-a75d-45b4-b4f3-500f5c27c71b",
+                    "propertyDependencies": {
+                        "bucket": [],
+                        "key": [],
+                        "source": []
+                    },
+                    "created": "2025-02-12T14:46:05.151358Z",
+                    "modified": "2025-02-12T14:46:05.151358Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/s3/bucketObjectv2.ts#429,9"
+                },
+                {
+                    "urn": "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function$aws:lambda/function:Function::wwwDevServerFunction",
+                    "custom": true,
+                    "id": "www-mackenzienolan-wwwDevServerFunction-zsedozca",
+                    "type": "aws:lambda/function:Function",
+                    "inputs": {
+                        "__defaults": [
+                            "reservedConcurrentExecutions",
+                            "skipDestroy"
+                        ],
+                        "architectures": [
+                            "x86_64"
+                        ],
+                        "description": "www dev server",
+                        "environment": {
+                            "__defaults": [],
+                            "variables": {
+                                "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                                "ciphertext": "v1:1m3r1pjxgD3ArnG1:9y/9Z0lP3gvggqpyK3dwHXKWAE/H+aivL5BweY3zcWsrAgeU2ZXhxM+8qdW+6yYOAhHtD/IStNdWhNhL23IhEBjNj9bUUjHW9Plv74BNO/3fVgBHOC4do/jY2UPMYP3Io/ebIA/9iJysqW9Z2ktEKrNoDq3q81MCzPsZzh9oFdrStSkT894OcnhhFhKDbPyNC/BK/U9NGv6Ue3ABBewTDr6vKWdI8R6AP/plSyg="
+                            }
+                        },
+                        "ephemeralStorage": {
+                            "__defaults": [],
+                            "size": 512
+                        },
+                        "handler": "index.handler",
+                        "loggingConfig": {
+                            "__defaults": [
+                                "applicationLogLevel",
+                                "systemLogLevel"
+                            ],
+                            "applicationLogLevel": "",
+                            "logFormat": "Text",
+                            "logGroup": "/aws/lambda/www-mackenzienolan-wwwDevServer-tovcdefd",
+                            "systemLogLevel": ""
+                        },
+                        "memorySize": 128,
+                        "name": "www-mackenzienolan-wwwDevServerFunction-zsedozca",
+                        "packageType": "Zip",
+                        "publish": false,
+                        "reservedConcurrentExecutions": -1,
+                        "role": "arn:aws:iam::412381756929:role/www-mackenzienolan-wwwDevServerRole-odafmeun",
+                        "runtime": "nodejs20.x",
+                        "s3Bucket": "sst-asset-cfrofcnfbvtt",
+                        "s3Key": "assets/wwwDevServer-code-b94cd6a1ec6d74ea8bfd347f6d53b4d8f13b94e1ac53e5dbbb629f9e1e93658e.zip",
+                        "skipDestroy": false,
+                        "tags": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        },
+                        "tagsAll": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        },
+                        "timeout": 20
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":600000000000,\"update\":600000000000}}",
+                        "architectures": [
+                            "x86_64"
+                        ],
+                        "arn": "arn:aws:lambda:us-east-1:412381756929:function:www-mackenzienolan-wwwDevServerFunction-zsedozca",
+                        "code": null,
+                        "codeSha256": "Sh6W0lGWy5dODIAChtdEM7Lub6EDhRnugc8yiQzupOY=",
+                        "codeSigningConfigArn": "",
+                        "deadLetterConfig": null,
+                        "description": "www dev server",
+                        "environment": {
+                            "variables": {
+                                "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                                "ciphertext": "v1:9t7PJo6mGmys15JD:RGXODI8NkXMPjlu82+C1AV2aOfnMKEwlpnsrHbW3PW1bnf0nijrflm57HkNMdBfHMI9Xh215BGGG5DTmeGU6ErPSzwvchpU5zXMrmrX1qkqZVvlbx1NLHTLiyPMIhgXNu42b6UFUuckosXYuyNTF6tzBDFSoDbYSsxsFUYG7lVR6sVg/ucOsHl1v3hiL2YlasJjfWyt2wM1gCFuyWT3vWFCMcAMoOFZ8PaPJ7BA="
+                            }
+                        },
+                        "ephemeralStorage": {
+                            "size": 512
+                        },
+                        "fileSystemConfig": null,
+                        "handler": "index.handler",
+                        "id": "www-mackenzienolan-wwwDevServerFunction-zsedozca",
+                        "imageConfig": null,
+                        "imageUri": "",
+                        "invokeArn": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:412381756929:function:www-mackenzienolan-wwwDevServerFunction-zsedozca/invocations",
+                        "kmsKeyArn": "",
+                        "lastModified": "2025-02-12T14:46:14.173+0000",
+                        "layers": null,
+                        "loggingConfig": {
+                            "applicationLogLevel": "",
+                            "logFormat": "Text",
+                            "logGroup": "/aws/lambda/www-mackenzienolan-wwwDevServer-tovcdefd",
+                            "systemLogLevel": ""
+                        },
+                        "memorySize": 128,
+                        "name": "www-mackenzienolan-wwwDevServerFunction-zsedozca",
+                        "packageType": "Zip",
+                        "publish": false,
+                        "qualifiedArn": "arn:aws:lambda:us-east-1:412381756929:function:www-mackenzienolan-wwwDevServerFunction-zsedozca:$LATEST",
+                        "qualifiedInvokeArn": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:412381756929:function:www-mackenzienolan-wwwDevServerFunction-zsedozca:$LATEST/invocations",
+                        "replaceSecurityGroupsOnDestroy": null,
+                        "replacementSecurityGroupIds": null,
+                        "reservedConcurrentExecutions": -1,
+                        "role": "arn:aws:iam::412381756929:role/www-mackenzienolan-wwwDevServerRole-odafmeun",
+                        "runtime": "nodejs20.x",
+                        "s3Bucket": "sst-asset-cfrofcnfbvtt",
+                        "s3Key": "assets/wwwDevServer-code-b94cd6a1ec6d74ea8bfd347f6d53b4d8f13b94e1ac53e5dbbb629f9e1e93658e.zip",
+                        "s3ObjectVersion": null,
+                        "signingJobArn": "",
+                        "signingProfileVersionArn": "",
+                        "skipDestroy": false,
+                        "snapStart": null,
+                        "sourceCodeHash": "",
+                        "sourceCodeSize": 391,
+                        "tags": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        },
+                        "tagsAll": {
+                            "sst:app": "www",
+                            "sst:stage": "mackenzienolan"
+                        },
+                        "timeout": 20,
+                        "tracingConfig": {
+                            "mode": "PassThrough"
+                        },
+                        "version": "$LATEST",
+                        "vpcConfig": null
+                    },
+                    "parent": "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function::wwwDevServer",
+                    "dependencies": [
+                        "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function$aws:cloudwatch/logGroup:LogGroup::wwwDevServerLogGroup",
+                        "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function$aws:iam/role:Role::wwwDevServerRole",
+                        "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function$aws:s3/bucketObjectv2:BucketObjectv2::wwwDevServerCode",
+                        "urn:pulumi:mackenzienolan::www::random:index/randomBytes:RandomBytes::LambdaEncryptionKey"
+                    ],
+                    "provider": "urn:pulumi:mackenzienolan::www::pulumi:providers:aws::default_6_66_2::29337d9b-a75d-45b4-b4f3-500f5c27c71b",
+                    "propertyDependencies": {
+                        "architectures": [],
+                        "description": [],
+                        "environment": [
+                            "urn:pulumi:mackenzienolan::www::random:index/randomBytes:RandomBytes::LambdaEncryptionKey"
+                        ],
+                        "ephemeralStorage": [],
+                        "handler": [],
+                        "loggingConfig": [
+                            "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function$aws:cloudwatch/logGroup:LogGroup::wwwDevServerLogGroup"
+                        ],
+                        "memorySize": [],
+                        "name": [],
+                        "packageType": [],
+                        "publish": [],
+                        "role": [
+                            "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function$aws:iam/role:Role::wwwDevServerRole"
+                        ],
+                        "runtime": [],
+                        "s3Bucket": [
+                            "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function$aws:s3/bucketObjectv2:BucketObjectv2::wwwDevServerCode"
+                        ],
+                        "s3Key": [
+                            "urn:pulumi:mackenzienolan::www::sst:aws:Astro$sst:aws:Function$aws:s3/bucketObjectv2:BucketObjectv2::wwwDevServerCode"
+                        ],
+                        "timeout": []
+                    },
+                    "created": "2025-02-12T14:46:20.063681Z",
+                    "modified": "2025-02-12T14:46:20.063681Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/lambda/function.ts#551,9",
+                    "ignoreChanges": [
+                        "name"
+                    ]
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}
