@@ -15,13 +15,14 @@ export default $config({
   },
   async run() {
     new sst.aws.Astro("www", {
-      domain: {
-        name:
-          $app.stage === "main"
-            ? "macknolan.com"
-            : `${$app.stage}.preview.macknolan.com`,
-        redirects: $app.stage === 'main' ? ['macknolan.dev', 'www.macknolan.dev'] : []
-      },
+      // domain: {
+      //   name:
+      //     $app.stage === "main"
+      //       ? "macknolan.com"
+      //       : `${$app.stage}.preview.macknolan.com`,
+      //   redirects:
+      //     $app.stage === "main" ? ["macknolan.dev", "www.macknolan.dev"] : [],
+      // },
     });
-  }
+  },
 });
