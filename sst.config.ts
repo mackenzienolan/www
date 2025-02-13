@@ -20,8 +20,8 @@ export default $config({
           $app.stage === "main"
             ? "macknolan.com"
             : `${$app.stage}.preview.macknolan.com`,
-        // redirects: $app.stage === 'main' ? ['macknolan.dev', 'www.macknolan.dev'] : []
+        redirects: $app.stage === 'main' ? ['macknolan.dev', 'www.macknolan.dev'] : []
       },
     });
-  },
+  }
 });
