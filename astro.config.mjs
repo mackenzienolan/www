@@ -9,11 +9,22 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
+  image: {
+    service: {
+      entrypoint: "astro/assets/services/noop",
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },
   output: "server",
   adapter: aws(),
-  site: "https://example.com",
-  integrations: [mdx(), sitemap(), react()],
+  site: "https://macknolan.com", // Update this to your actual domain
+  integrations: [
+    mdx(),
+    sitemap({
+      customPages: ["https://macknolan.com/sitwell_features.pdf"],
+    }),
+    react(),
+  ],
 });
