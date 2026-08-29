@@ -6,112 +6,414 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<link rel="sitemap" href="/sitemap-index.xml" />
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={`${SITE_TITLE} — ${SITE_DESCRIPTION}`} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body class="bg-background text-foreground flex flex-col min-h-screen">
 		<Header />
-		<main class="container mx-auto px-4 py-8">
+		
+		<main class="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16 flex-1 w-full">
 			<!-- Hero/Intro Section -->
-			<section class="mb-16 text-center">
-				<h1 class="text-4xl font-bold mb-4">Hi, I'm Mackenzie Nolan 👋</h1>
-				<p class="text-xl mb-6">
-					I&apos;m a Software Engineer & Entrepreneur passionate about <strong>AI, automation, and building high-performance software</strong>. Currently, I&apos;m working on an AI solution to help fitness studios and instructors gain better insights and feedback. I&apos;m also focused on developing tools to streamline web app development and extending Stripe to simplify authorization and billing solutions.
+			<section class="mb-20 sm:mb-28 max-w-3xl">
+				<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium mb-6 border border-border/80">
+					<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+					<span>VP of AI Engineering @ ForwardPath AI</span>
+				</div>
+				
+				<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground mb-6 leading-[1.15]">
+					Building high-performance AI systems, enterprise tools, &amp; products.
+				</h1>
+				
+				<p class="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8">
+					Hi, I'm <strong class="text-foreground font-semibold">Mackenzie Nolan</strong> 👋. I'm the 
+					<strong class="text-foreground font-semibold">VP of AI Engineering at ForwardPath AI</strong>, leading an engineering team of 5 building custom AI tools for the construction, retail, and healthcare industries. 
+					On the side, I'm building <strong class="text-foreground font-semibold">Studio Genius</strong> and working on a new stealth venture in the AI space.
 				</p>
-			</section>
-
-			<!-- Projects Section -->
-			<section class="mb-16" id="projects">
-				<h2 class="text-3xl font-bold mb-8">Featured Projects</h2>
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-					<!-- Project Card 1 -->
-					<div class="border rounded-lg p-6 hover:shadow-lg transition">
-						<h3 class="text-xl font-bold mb-2">Studio Genius</h3>
-						<p class="text-gray-600 mb-4">Studio Genius is the AI Copilot for growing your fitness studio. Engage members, and grow your business.</p>
-						<div class="flex gap-2">
-							<a href="https://studiogenius.co" class="text-blue-500 hover:underline">studiogenius.co</a>
-						</div>
-					</div>
-
-					<!-- Project Card 2 -->
-					<div class="border rounded-lg p-6 hover:shadow-lg transition">
-						<h3 class="text-xl font-bold mb-2">Grantly</h3>
-						<p class="text-gray-600 mb-4">Authorization for Stripe and Lemon Squeezy. No more managing customer entitlements.</p>
-						<div class="flex gap-2">
-							<a href="https://grantly.co" class="text-blue-500 hover:underline">🚧 grantly.co</a>
-							/
-							<a href="https://github.com/mackenzienolan/grantly" class="text-blue-500 hover:underline">GitHub</a>
-						</div>
-					</div>
-
-					<!-- Project Card 3 -->
-					<!-- <div class="border rounded-lg p-6 hover:shadow-lg transition">
-						<h3 class="text-xl font-bold mb-2">Project Name</h3>
-						<p class="text-gray-600 mb-4">Brief description of your project and what technologies you used.</p>
-						<div class="flex gap-2">
-							<a href="#" class="text-blue-500 hover:underline">Demo</a>
-							<a href="#" class="text-blue-500 hover:underline">GitHub</a>
-						</div>
-					</div> -->
+				
+				<div class="flex flex-wrap items-center gap-3.5">
+					<a
+						href="#experience"
+						class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition shadow-sm"
+					>
+						<span>View Leadership &amp; Work</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+					</a>
+					<a
+						href="#projects"
+						class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-secondary text-secondary-foreground font-medium text-sm hover:bg-secondary/80 border border-border transition"
+					>
+						<span>Side Projects</span>
+					</a>
+					<a
+						href="mailto:mack@macknolan.com"
+						class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted/60 font-medium text-sm transition"
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+						<span>Get in Touch</span>
+					</a>
 				</div>
 			</section>
 
-			<section class="mb-16" id="experience">
-				<h2 class="text-3xl font-bold mb-8">Past Work Experience</h2>
+			<!-- Current Leadership & Experience Section -->
+			<section class="mb-20 sm:mb-24" id="experience">
+				<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 pb-4 border-b border-border/60 gap-2">
+					<div>
+						<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">Engineering Leadership &amp; Experience</h2>
+						<p class="text-sm text-muted-foreground mt-1">Leading AI teams and architecting mission-critical platforms.</p>
+					</div>
+				</div>
+
+				<!-- Featured Current Role Card: ForwardPath AI -->
+				<div class="mb-8 bg-card text-card-foreground border-2 border-primary/20 rounded-2xl p-6 sm:p-8 hover:border-primary/40 hover:shadow-xl transition-all duration-300">
+					<div class="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-6">
+						<div class="flex items-start gap-3.5">
+							<div class="w-12 h-12 rounded-xl bg-primary text-primary-foreground flex items-center justify-center font-black text-lg tracking-wider shadow-md shrink-0">
+								FP
+							</div>
+							<div>
+								<div class="flex flex-wrap items-center gap-2 mb-1">
+									<h3 class="text-2xl font-bold tracking-tight text-foreground">ForwardPath AI</h3>
+									<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
+										<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+										Current Role
+									</span>
+								</div>
+								<p class="text-sm font-medium text-muted-foreground">
+									VP of AI Engineering &bull; Leading Team of 5 Engineers
+								</p>
+							</div>
+						</div>
+
+						<a
+							href="https://forwardpath.ai"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-secondary text-secondary-foreground text-xs font-semibold hover:bg-secondary/80 border border-border transition shrink-0 self-start group/link"
+						>
+							<span>forwardpath.ai</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+						</a>
+					</div>
+
+					<p class="text-muted-foreground text-sm sm:text-base leading-relaxed mb-6">
+						Leading a 5-engineer team designing and deploying custom generative AI systems and automated workflows for enterprise clients in construction, retail, and healthcare.
+					</p>
+
+					<!-- Sub-products & Key Impacts -->
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+						<div class="bg-muted/40 rounded-xl p-4 border border-border/60">
+							<div class="flex items-center gap-2 mb-2 text-foreground font-semibold text-sm">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-500"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+								<span>Retail Intelligence</span>
+							</div>
+							<p class="text-xs text-muted-foreground leading-relaxed">
+								Real-time associate assistant delivering floor-level sales insights, live inventory lookups, and on-demand product training data.
+							</p>
+						</div>
+
+						<div class="bg-muted/40 rounded-xl p-4 border border-border/60">
+							<div class="flex items-center gap-2 mb-2 text-foreground font-semibold text-sm">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+								<span>Generative PO Processing</span>
+							</div>
+							<p class="text-xs text-muted-foreground leading-relaxed">
+								Automated document intelligence pipeline that extracts, parses, and reconciles purchase orders—saving operations teams hundreds of hours per month.
+							</p>
+						</div>
+
+						<div class="bg-muted/40 rounded-xl p-4 border border-border/60">
+							<div class="flex items-center gap-2 mb-2 text-foreground font-semibold text-sm">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-500"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M10 12h4"/></svg>
+								<span>Construction Pursuits</span>
+							</div>
+							<p class="text-xs text-muted-foreground leading-relaxed">
+								AI tender discovery and bid acceleration tool helping construction firms pinpoint high-margin RFPs, assess feasibility, and win more contracts.
+							</p>
+						</div>
+					</div>
+
+					<div class="flex flex-wrap gap-1.5">
+						<span class="px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">Team Leadership (5 Eng)</span>
+						<span class="px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">LLM Agents</span>
+						<span class="px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">Document AI</span>
+						<span class="px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">Enterprise Workflows</span>
+						<span class="px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">Healthcare &amp; Retail</span>
+					</div>
+				</div>
+
+				<!-- Prior Work Experience Grid -->
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-					<!-- Project Card 1 -->
-					<div class="border rounded-lg p-6 hover:shadow-lg transition">
-						<div class="flex flex-row gap-2">
-							<img src="/locorum.webp" alt="Locorum" class="w-8 h-8 rounded-full" />
-							<h3 class="text-xl font-bold mb-2">  Locorum</h3>
+					<!-- Experience Card 1: Tribble.ai -->
+					<div class="group bg-card text-card-foreground border border-border rounded-xl p-6 hover:border-foreground/30 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+						<div>
+							<div class="flex items-center gap-3 mb-3">
+								<div class="w-9 h-9 rounded-lg bg-violet-50 border border-violet-100 flex items-center justify-center font-bold text-sm text-violet-700 shadow-xs">
+									T
+								</div>
+								<div>
+									<h3 class="text-lg font-bold tracking-tight text-foreground">Tribble.ai</h3>
+									<span class="text-xs text-muted-foreground">Forward Deployed Engineer</span>
+								</div>
+							</div>
+							<p class="text-muted-foreground text-sm leading-relaxed mb-4">
+								Deployed Tribble into enterprise customer organizations, partnered on the front lines to troubleshoot and resolve issues, and built custom integrations and tools tailored to client workflows.
+							</p>
 						</div>
-						<p class="text-gray-600 mb-4">Developed a platform for sending custom branded MasterCard's to customers for loyalty rewards.</p>
-						<div class="flex gap-2">
-							<a href="https://locorum.io" class="text-blue-500 hover:underline">locorum.io</a>
+						<div class="pt-3 border-t border-border/50">
+							<a
+								href="https://tribble.ai"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-1.5 text-xs font-semibold text-foreground hover:text-primary transition-colors group/link"
+							>
+								<span>tribble.ai</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+							</a>
 						</div>
 					</div>
 
-					<!-- Project Card 2 -->
-					<div class="border rounded-lg p-6 hover:shadow-lg transition">
-						<div class="flex flex-row gap-2">
-							<img src="/kwikstate.png" alt="Kwik State" class="w-6 h-6 rounded-full" />
-							<h3 class="text-xl font-bold mb-2">Kwik State</h3>
+					<!-- Experience Card 2: Locorum -->
+					<div class="group bg-card text-card-foreground border border-border rounded-xl p-6 hover:border-foreground/30 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+						<div>
+							<div class="flex items-center gap-3 mb-3">
+								<div class="w-9 h-9 rounded-lg bg-indigo-50 border border-indigo-100 flex items-center justify-center font-bold text-sm text-indigo-700 shadow-xs">
+									L
+								</div>
+								<div>
+									<h3 class="text-lg font-bold tracking-tight text-foreground">Locorum</h3>
+									<span class="text-xs text-muted-foreground">Fintech &amp; Loyalty Rewards</span>
+								</div>
+							</div>
+							<p class="text-muted-foreground text-sm leading-relaxed mb-4">
+								Developed a fintech platform for sending custom-branded Mastercards to customers for loyalty incentives and reward disbursements.
+							</p>
 						</div>
-						<p class="text-gray-600 mb-4">Developed a platform for listening to Kwik State by NuCalm. This is a partnership between influencer Jim Kwik and NuCalm. I worked on developing the E-Commerce checkout and audio streaming platform.</p>
-						<div class="flex gap-2">
-							<a href="https://app.kwikstate.nucalm.com/checkout" class="text-blue-500 hover:underline">Kwik State</a>
+						<div class="pt-3 border-t border-border/50">
+							<a
+								href="https://locorum.io"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-1.5 text-xs font-semibold text-foreground hover:text-primary transition-colors group/link"
+							>
+								<span>locorum.io</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+							</a>
 						</div>
 					</div>
 
-					<!-- Project Card 3 -->
-					<div class="border rounded-lg p-6 hover:shadow-lg transition">
-						<h3 class="text-xl font-bold mb-2">NuCalm</h3>
-						<p class="text-gray-600 mb-4">Developed a platform for purchasing subscription to NuCalm's products as well as managing subscriptions.</p>
-						<div class="flex gap-2">
-							<a href="https://nucalm.com/" class="text-blue-500 hover:underline">nucalm.com</a>
+					<!-- Experience Card 3: Kwik State -->
+					<div class="group bg-card text-card-foreground border border-border rounded-xl p-6 hover:border-foreground/30 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+						<div>
+							<div class="flex items-center gap-3 mb-3">
+								<div class="w-9 h-9 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center font-bold text-sm text-emerald-700 shadow-xs">
+									K
+								</div>
+								<div>
+									<h3 class="text-lg font-bold tracking-tight text-foreground">Kwik State</h3>
+									<span class="text-xs text-muted-foreground">Streaming &amp; E-Commerce</span>
+								</div>
+							</div>
+							<p class="text-muted-foreground text-sm leading-relaxed mb-4">
+								Engineered the audio streaming platform and high-converting checkout experience for the partnership between Jim Kwik and NuCalm.
+							</p>
+						</div>
+						<div class="pt-3 border-t border-border/50">
+							<a
+								href="https://app.kwikstate.nucalm.com/checkout"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-1.5 text-xs font-semibold text-foreground hover:text-primary transition-colors group/link"
+							>
+								<span>app.kwikstate.nucalm.com</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+							</a>
 						</div>
 					</div>
-					<div class="border rounded-lg p-6 hover:shadow-lg transition">
-						<h3 class="text-xl font-bold mb-2">Jack Health / Jill Health</h3>
-						<p class="text-gray-600 mb-4">Worked on extending Big Commerce to integrate with Jack / Jill's Platform. As well as worked on the launch of the jill.health application.</p>
-						<div class="flex gap-2">
-							<a href="https://jack.health/" class="text-blue-500 hover:underline">jack.health</a>
-							/
-							<a href="https://jill.health/" class="text-blue-500 hover:underline">jill.health</a>
+
+					<!-- Experience Card 4: NuCalm -->
+					<div class="group bg-card text-card-foreground border border-border rounded-xl p-6 hover:border-foreground/30 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+						<div>
+							<div class="flex items-center gap-3 mb-3">
+								<div class="w-9 h-9 rounded-lg bg-sky-50 border border-sky-100 flex items-center justify-center font-bold text-sm text-sky-700 shadow-xs">
+									N
+								</div>
+								<div>
+									<h3 class="text-lg font-bold tracking-tight text-foreground">NuCalm</h3>
+									<span class="text-xs text-muted-foreground">Subscription Architecture</span>
+								</div>
+							</div>
+							<p class="text-muted-foreground text-sm leading-relaxed mb-4">
+								Developed subscription purchase flows and self-service account management portals for NuCalm's neuroscience products.
+							</p>
+						</div>
+						<div class="pt-3 border-t border-border/50">
+							<a
+								href="https://nucalm.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-1.5 text-xs font-semibold text-foreground hover:text-primary transition-colors group/link"
+							>
+								<span>nucalm.com</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+							</a>
 						</div>
 					</div>
-					<div class="border rounded-lg p-6 hover:shadow-lg transition">
-						<h3 class="text-xl font-bold mb-2">ShutterShare</h3>
-						<p class="text-gray-600 mb-4">Developed a marketplace for video and photo content creators to share their equipment. Developed systems to secure and automate verification and validation of users, issue insurance. Developed in-app realtime chat to ensure users were communicating securely.</p>
-						<div class="flex gap-2">
-							<a href="https://web.archive.org/web/20180725052420/http://shuttershare.io/" class="text-blue-500 hover:underline">Web Archive</a>
+
+					<!-- Experience Card 5: Jack Health / Jill Health -->
+					<div class="group bg-card text-card-foreground border border-border rounded-xl p-6 hover:border-foreground/30 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+						<div>
+							<div class="flex items-center gap-3 mb-3">
+								<div class="w-9 h-9 rounded-lg bg-rose-50 border border-rose-100 flex items-center justify-center font-bold text-sm text-rose-700 shadow-xs">
+									J
+								</div>
+								<div>
+									<h3 class="text-lg font-bold tracking-tight text-foreground">Jack / Jill Health</h3>
+									<span class="text-xs text-muted-foreground">Telehealth &amp; E-Commerce</span>
+								</div>
+							</div>
+							<p class="text-muted-foreground text-sm leading-relaxed mb-4">
+								Extended BigCommerce to integrate with the proprietary telehealth clinical platform and helped launch the jill.health patient application.
+							</p>
+						</div>
+						<div class="pt-3 border-t border-border/50 flex items-center gap-2">
+							<a
+								href="https://jack.health/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-1 text-xs font-semibold text-foreground hover:text-primary transition-colors"
+							>
+								<span>jack.health</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+							</a>
+							<span class="text-border">/</span>
+							<a
+								href="https://jill.health/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-1 text-xs font-semibold text-foreground hover:text-primary transition-colors"
+							>
+								<span>jill.health</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+							</a>
+						</div>
+					</div>
+
+					<!-- Experience Card 6: ShutterShare -->
+					<div class="group bg-card text-card-foreground border border-border rounded-xl p-6 hover:border-foreground/30 hover:shadow-md transition-all duration-200 flex flex-col justify-between">
+						<div>
+							<div class="flex items-center gap-3 mb-3">
+								<div class="w-9 h-9 rounded-lg bg-purple-50 border border-purple-100 flex items-center justify-center font-bold text-sm text-purple-700 shadow-xs">
+									S
+								</div>
+								<div>
+									<h3 class="text-lg font-bold tracking-tight text-foreground">ShutterShare</h3>
+									<span class="text-xs text-muted-foreground">Creator Equipment Marketplace</span>
+								</div>
+							</div>
+							<p class="text-muted-foreground text-sm leading-relaxed mb-4">
+								Peer-to-peer equipment marketplace for creators. Built automated identity validation, instant insurance underwriting, and secure real-time messaging.
+							</p>
+						</div>
+						<div class="pt-3 border-t border-border/50">
+							<a
+								href="https://web.archive.org/web/20180725052420/http://shuttershare.io/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors group/link"
+							>
+								<span>Web Archive</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Side Projects & Ventures Section -->
+			<section class="mb-20 sm:mb-24" id="projects">
+				<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 pb-4 border-b border-border/60 gap-2">
+					<div>
+						<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">Side Projects &amp; Ventures</h2>
+						<p class="text-sm text-muted-foreground mt-1">Independent products and AI ventures I'm building.</p>
+					</div>
+				</div>
+				
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<!-- Project Card 1: Studio Genius -->
+					<div class="group bg-card text-card-foreground border border-border rounded-xl p-6 sm:p-7 hover:border-foreground/30 hover:shadow-lg transition-all duration-200 flex flex-col justify-between">
+						<div>
+							<div class="flex items-center justify-between gap-2 mb-3">
+								<h3 class="text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
+									Studio Genius
+								</h3>
+								<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200/60">
+									<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+									Live
+								</span>
+							</div>
+							
+							<p class="text-muted-foreground text-sm leading-relaxed mb-5">
+								The AI Copilot for fitness studios and instructors. Delivers actionable client retention insights, automated feedback loops, and intelligent business growth tooling.
+							</p>
+
+							<div class="flex flex-wrap gap-1.5 mb-6">
+								<span class="px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">AI / LLM</span>
+								<span class="px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">Next.js</span>
+								<span class="px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">TypeScript</span>
+								<span class="px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">Fitness Tech</span>
+							</div>
+						</div>
+
+						<div class="pt-4 border-t border-border/50 flex items-center justify-between">
+							<a
+								href="https://studiogenius.co"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-1.5 text-sm font-semibold text-foreground hover:text-primary transition-colors group/link"
+							>
+								<span>studiogenius.co</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+							</a>
+						</div>
+					</div>
+
+					<!-- Project Card 2: Stealth AI Project -->
+					<div class="group bg-card text-card-foreground border border-dashed border-border rounded-xl p-6 sm:p-7 hover:border-foreground/30 hover:shadow-lg transition-all duration-200 flex flex-col justify-between relative overflow-hidden">
+						<div class="absolute -right-8 -top-8 w-24 h-24 bg-primary/5 rounded-full blur-xl pointer-events-none"></div>
+						
+						<div>
+							<div class="flex items-center justify-between gap-2 mb-3">
+								<h3 class="text-xl font-bold tracking-tight text-foreground">
+									Stealth AI Project
+								</h3>
+								<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-50 text-purple-700 border border-purple-200/60">
+									<span class="w-1.5 h-1.5 rounded-full bg-purple-500 animate-pulse"></span>
+									Stealth
+								</span>
+							</div>
+							
+							<p class="text-muted-foreground text-sm leading-relaxed mb-5">
+								A new secretive project in the AI space exploring next-generation automation and autonomous workflows. More details to be revealed soon.
+							</p>
+
+							<div class="flex flex-wrap gap-1.5 mb-6">
+								<span class="px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">Generative AI</span>
+								<span class="px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">Autonomous Agents</span>
+								<span class="px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">Stealth</span>
+							</div>
+						</div>
+
+						<div class="pt-4 border-t border-border/50 flex items-center justify-between text-xs font-mono text-muted-foreground">
+							<span>Status: In Development</span>
+							<span class="text-foreground/80 font-medium">Coming Soon</span>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
+
 		<Footer />
 	</body>
 </html>
